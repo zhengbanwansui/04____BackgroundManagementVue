@@ -28,6 +28,21 @@ const routes = [
     path: '/1-4',
     name: '1-4',
     component: () => import('../views/1-4.vue')
+  },
+  {
+    path: '/listData',
+    name: 'listData',
+    component: () => import('../views/listData.vue')
+  },
+  {
+    path: '/insertData',
+    name: 'insertData',
+    component: () => import('../views/insertData.vue')
+  },
+  {
+    path: '/updateData',
+    name: 'updateData',
+    component: () => import('../views/updateData.vue')
   }
 ]
 

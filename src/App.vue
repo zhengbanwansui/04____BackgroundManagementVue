@@ -8,15 +8,25 @@
                     <el-submenu index="1">
                         <template slot="title">
                             <i class="el-icon-folder-opened"></i>
-                            <span>用户数据</span>
+                            <span>数据1</span>
                         </template>
-                        <el-menu-item index="/1-1">全部用户</el-menu-item>
+                        <el-menu-item index="/1-1">全部</el-menu-item>
                         <el-menu-item index="/1-2">添加</el-menu-item>
                         <el-menu-item index="/1-3">修改</el-menu-item>
                         <el-menu-item index="/1-4">删除</el-menu-item>
                     </el-submenu>
 
                     <el-submenu index="2">
+                        <template slot="title">
+                            <i class="el-icon-folder-opened"></i>
+                            <span>数据2</span>
+                        </template>
+                        <el-menu-item index="/listData">全部</el-menu-item>
+                        <el-menu-item index="/insertData">添加</el-menu-item>
+                        <el-menu-item index="/updateData">修改</el-menu-item>
+                    </el-submenu>
+
+                    <el-submenu index="3">
                         <template slot="title">
                             <i class="el-icon-data-line"></i>
                             <span>统计图</span>
@@ -30,7 +40,7 @@
             </el-aside>
             <el-container>
                 <el-header>
-                    <h1>后台管理系统</h1>
+                    <h1>系统</h1>
                 </el-header>
                 <el-main>
                     <router-view />
